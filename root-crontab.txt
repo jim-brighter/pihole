@@ -23,4 +23,4 @@
 # m h  dom mon dow   command
 
 5 8 * * * /opt/updater.sh > /opt/updater-output.log 2>&1
-5 9 * * 0 /sbin/reboot now
+5 10 * * 0 /sbin/reboot now

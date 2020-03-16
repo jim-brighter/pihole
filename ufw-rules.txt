@@ -8,11 +8,11 @@ To                         Action      From
 67/tcp                     ALLOW IN    Anywhere                  
 67/udp                     ALLOW IN    Anywhere                  
 546:547/udp                ALLOW IN    Anywhere                  
-80/tcp                     ALLOW IN    192.168.5.0/24            
-53/tcp                     ALLOW IN    192.168.5.0/24            
-53/udp                     ALLOW IN    192.168.5.0/24            
-4711/tcp                   ALLOW IN    192.168.5.0/24            
-22/tcp                     ALLOW IN    192.168.5.0/24            
+80/tcp                     ALLOW IN    192.168.1.0/24            
+53/tcp                     ALLOW IN    192.168.1.0/24            
+53/udp                     ALLOW IN    192.168.1.0/24            
+4711:4720/tcp              ALLOW IN    192.168.1.0/24            
+22/tcp                     ALLOW IN    192.168.1.0/24            
 67/tcp (v6)                ALLOW IN    Anywhere (v6)             
 67/udp (v6)                ALLOW IN    Anywhere (v6)             
 546:547/udp (v6)           ALLOW IN    Anywhere (v6)             
