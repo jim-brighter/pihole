@@ -1,5 +1,4 @@
 Displaying gravity resistant domains:
 
-  1: jdoqocy.com
+  1: matrix.hulu.com
   2: vortex.hulu.com
-  3: matrix.hulu.com
