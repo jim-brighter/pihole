@@ -14,7 +14,6 @@ sudo raspi-config
 # 3. Logout and connect via ssh for the rest of the setup
 
 sudo sed -i -e 's/#PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config
-sudo sed -i -e 's/#ChallengeResponseAuthentication yes/ChallengeResponseAuthentication no/' /etc/ssh/sshd_config
 sudo sed -i -e 's/UsePAM yes/UsePAM no/' /etc/ssh/sshd_config
 
 # verify these 3 actually worked
