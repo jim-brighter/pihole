@@ -1,11 +1,11 @@
 # Quick Start
 ```bash
-sudo apt update && sudo apt full-upgrade -y
-sudo apt install -y vim git ufw
-
 sudo dpkg-reconfigure console-setup
 
 # 1. Change font size
+
+sudo apt update && sudo apt full-upgrade -y
+sudo apt install -y vim git ufw
 
 sudo raspi-config
 
