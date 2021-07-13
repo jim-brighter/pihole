@@ -41,6 +41,11 @@ sudo ufw status verbose
 
 # verify rules
 
+# Switch to root user for pihole install
+sudo su
+curl -sSL https://install.pi-hole.net | bash
+Ctrl+D
+
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 
@@ -48,10 +53,11 @@ sudo usermod -aG docker pi
 
 # logout and login again
 
-curl -LO https://raw.githubusercontent.com/jim-brighter/pihole/master/start_pihole.sh
-chmod +x start_pihole.sh
-ifconfig # note ip address
-./start_pihole.sh <password> <ip address>
+# I no longer recommend using the docker install after I found out docker ignores ufw, so the rules setup above are essentially ignored by this container
+# curl -LO https://raw.githubusercontent.com/jim-brighter/pihole/master/start_pihole.sh
+# chmod +x start_pihole.sh
+# ifconfig # note ip address
+# ./start_pihole.sh <password> <ip address>
 
 git clone https://github.com/jim-brighter/pi-dashboard.git
 cd pi-dashboard/
